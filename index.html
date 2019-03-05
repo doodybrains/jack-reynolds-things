@@ -9,10 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- this website was hand coded by emma "doodybrains" rae norton -->
     <style>
-      @font-face {
-        font-family: junicode;
-        src: url(ttf/Junicode-Bold.ttf);
-      }
+    @font-face {
+        font-family: 'cooper';
+        src: url('ttf/cooperhewitt-heavy-webfont.woff2') format('woff2'),
+             url('ttf/cooperhewitt-heavy-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
 
       html {
         box-sizing: border-box;
@@ -26,7 +30,7 @@
         margin: 0;
         height: 100vh;
         overflow: hidden;
-        font-family: junicode;
+        font-family: cooper;
         background-color: snow;
         color: black;
       }
