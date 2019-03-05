@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- this website was hand coded by emma "doodybrains" rae norton -->
     <style>
+      @font-face {
+        font-family: garamond;
+        src: url(ttf/Junicode-Bold.ttf);
+      }
+
       html {
         box-sizing: border-box;
       }
@@ -21,9 +26,11 @@
         margin: 0;
         height: 100vh;
         overflow: hidden;
-        font-family: monospace;
+        font-family: garamond;
         background-color: snow;
         color: black;
+
+        font-weight: light;
       }
 
       .handcoding-is-fun {
@@ -36,13 +43,14 @@
       }
 
       h1 {
-        font-size: 2em;
-        margin: 0;
+        font-size: 1.5em;
+        margin: 0 0 4px 0;
+        text-transform: uppercase;
       }
 
       h2 {
-        font-size: 1.5em;
-        margin: 0;
+        font-size: .75em;
+        margin: 0 0 30px 0;
       }
 
       a {
@@ -57,27 +65,44 @@
       }
 
       p {
-        font-size: 1em;
-        line-height: 1.5em;
+        font-size: .75em;
+        line-height: .75em;
         letter-spacing: 0.03em;
-        margin: 0 0 40px 0;
+        margin: 0 0 5px 0;
+        text-transform: uppercase;
       }
-
+      p.series {
+        font-style: italic;
+      }
+      .contain-the-thing img {
+        margin-bottom: 5px;
+        width: 100%;
+      }
+      .thing-wrapper {
+        margin-bottom: 40px;
+      }
       @media only screen and (min-width: 768px) {
+        .things-container {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-wrap: wrap;
+          width: 100%;
+          padding-bottom: 120px;
+        }
+        .thing-wrapper {
+          padding: 10px;
+          width: 33.33%;
+        }
         .handcoding-is-fun {
-          padding: 20px 160px 20px 20px;
-          font-size: 1.5em;
+          padding: 10px;
         }
         h1 {
-          font-size: 2.5em;
+          font-size: 3em;
         }
         h2 {
-          font-size: 1.25em;
-        }
-        p {
-          font-size: 1em;
-          line-height: 1.25em;
-          margin-bottom: 20px;
+          font-size: 1.125em;
+          letter-spacing: 0.01em;
         }
       }
     </style>
@@ -86,8 +111,75 @@
   <body>
     <div class="handcoding-is-fun">
       <h1>jack reynolds</h1>
-      <p>to get in touch please send a message to thedogfacedboy@gmail.com</p>
-      <div class="work-container">
+
+      <h2>to get in touch send a message to thedogfacedboy@gmail.com</h2>
+
+      <div class="things-container">
+        <div class="thing-wrapper">
+          <div class="contain-the-thing">
+            <img alt="" src="images/frogs.jpg" />
+          </div>
+          <div class="thing-information">
+            <p>title</p>
+            <p class="series">series</p>
+            <p>material</p>
+          </div>
+        </div>
+
+        <div class="thing-wrapper">
+          <div class="contain-the-thing">
+            <img alt="" src="images/lava.jpg" />
+          </div>
+          <div class="thing-information">
+            <p>title</p>
+            <p class="series">series</p>
+            <p>material</p>
+          </div>
+        </div>
+
+        <div class="thing-wrapper">
+          <div class="contain-the-thing">
+            <img alt="" src="images/hat-yellow-blue.jpg" />
+          </div>
+          <div class="thing-information">
+            <p>title</p>
+            <p class="series">series</p>
+            <p>material</p>
+          </div>
+        </div>
+
+        <div class="thing-wrapper">
+          <div class="contain-the-thing">
+            <img alt="" src="images/pearl.jpg" />
+          </div>
+          <div class="thing-information">
+            <p>title</p>
+            <p class="series">series</p>
+            <p>material</p>
+          </div>
+        </div>
+
+        <div class="thing-wrapper">
+          <div class="contain-the-thing">
+            <img alt="" src="images/yellow-shirt.jpg" />
+          </div>
+          <div class="thing-information">
+            <p>title</p>
+            <p class="series">series</p>
+            <p>material</p>
+          </div>
+        </div>
+
+        <div class="thing-wrapper">
+          <div class="contain-the-thing">
+            <img alt="" src="images/sweater.jpg" />
+          </div>
+          <div class="thing-information">
+            <p>title</p>
+            <p class="series">series</p>
+            <p>material</p>
+          </div>
+        </div>
 
 
       </div>
